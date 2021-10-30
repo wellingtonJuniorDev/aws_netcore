@@ -1,3 +1,4 @@
+using AwsCs.Core.Configurations;
 using AwsCs.Services.Api.Extensions;
 using AwsCs.Services.Api.Services;
 using AwsCs.Services.Api.Services.Interfaces;
@@ -24,6 +25,8 @@ namespace AwsCs.Services.Api
             services.AddScoped<IStorageService, SimpleStorageService>();
             // SES
             services.AddScoped<IEmailService, SesService>();
+            // SQS-SNS
+            services.AddSqsConfiguration(Configuration.SafeGet<SqsConfiguration>());
 
             services.AddSwaggerConfiguration();
             services.AddControllers();
