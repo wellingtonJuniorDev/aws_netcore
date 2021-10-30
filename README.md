@@ -11,3 +11,7 @@ POC (Prova de conceito) consumindo recursos e serviços da AWS através do Asp.N
 
 ## Simple Email Service (SES)
 - Enviar email com possibilidade de destinatários em cópia, e/ou cópia oculta
+
+## Simple Queue Service (SQS) & Simple Notification Service (SNS)
+- Implementação do pattern Publish/Subscribe
+- Mensageria com framework [MassTransit](https://masstransit-project.com)

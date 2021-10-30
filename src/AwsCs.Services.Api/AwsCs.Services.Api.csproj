@@ -11,10 +11,19 @@
     <PackageReference Include="AWSSDK.S3" Version="3.7.3.20" />
     <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.0.87" />
 
+    <PackageReference Include="MassTransit" Version="7.2.3" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.3" />
+    <PackageReference Include="MassTransit.AmazonSQS" Version="7.2.3" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.2.3" />
+
     <PackageReference Include="MimeTypeMapOfficial" Version="1.0.17" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.4" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.4" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AwsCs.Core\AwsCs.Core.csproj" />
   </ItemGroup>
 
   
